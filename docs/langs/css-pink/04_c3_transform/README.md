@@ -11,6 +11,8 @@ sidebar: auto
 - [2. CSS 进阶](/langs/css-pink/02_enhance/)
 - [3. Html5 和 CSS3 了解](/langs/css-pink/03_h5c3_intro/)
 - [4. CSS3 转换](/langs/css-pink/04_c3_transform/)
+- [5. 移动端第一部分](/langs/css-pink/05_mobile_pt1/)
+- [6. 移动端第二部分](/langs/css-pink/06_mobile_pt2/)
 
 ## CSS3 2D 转换
 
