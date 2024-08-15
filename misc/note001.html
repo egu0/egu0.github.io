@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS 获取随机数 | Egu0</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon shortcut" size="32x32" href="/images/logo.png">
+    <meta name="description" content="欢迎您，这是一个公开的个人内容网站！">
+    
+    <link rel="preload" href="/assets/css/0.styles.acc2b136.css" as="style"><link rel="preload" href="/assets/js/app.5053d170.js" as="script"><link rel="preload" href="/assets/js/2.ab8d584e.js" as="script"><link rel="preload" href="/assets/js/1.4ee088e4.js" as="script"><link rel="preload" href="/assets/js/62.f6520625.js" as="script"><link rel="prefetch" href="/assets/js/10.d539cfa6.js"><link rel="prefetch" href="/assets/js/11.ec8b1324.js"><link rel="prefetch" href="/assets/js/12.82fe8bb1.js"><link rel="prefetch" href="/assets/js/13.7fe1d52d.js"><link rel="prefetch" href="/assets/js/14.986df48d.js"><link rel="prefetch" href="/assets/js/15.2c4f2941.js"><link rel="prefetch" href="/assets/js/16.3f6489cd.js"><link rel="prefetch" href="/assets/js/17.7729a3d0.js"><link rel="prefetch" href="/assets/js/18.d95afb6f.js"><link rel="prefetch" href="/assets/js/19.18dad606.js"><link rel="prefetch" href="/assets/js/20.f4f6c0f9.js"><link rel="prefetch" href="/assets/js/21.c6d76090.js"><link rel="prefetch" href="/assets/js/22.3edb6051.js"><link rel="prefetch" href="/assets/js/23.40deaf3d.js"><link rel="prefetch" href="/assets/js/24.eb4d94dc.js"><link rel="prefetch" href="/assets/js/25.70f65833.js"><link rel="prefetch" href="/assets/js/26.6c96526b.js"><link rel="prefetch" href="/assets/js/27.fa40898c.js"><link rel="prefetch" href="/assets/js/28.6691be66.js"><link rel="prefetch" href="/assets/js/29.11233b7c.js"><link rel="prefetch" href="/assets/js/3.87abfc2a.js"><link rel="prefetch" href="/assets/js/30.4c4edaef.js"><link rel="prefetch" href="/assets/js/31.55f9bc32.js"><link rel="prefetch" href="/assets/js/32.731bca67.js"><link rel="prefetch" href="/assets/js/33.da961e4e.js"><link rel="prefetch" href="/assets/js/34.2023de9c.js"><link rel="prefetch" href="/assets/js/35.2ddad86f.js"><link rel="prefetch" href="/assets/js/36.884b2032.js"><link rel="prefetch" href="/assets/js/37.c5687952.js"><link rel="prefetch" href="/assets/js/38.d261388b.js"><link rel="prefetch" href="/assets/js/39.8b543f01.js"><link rel="prefetch" href="/assets/js/4.4592694e.js"><link rel="prefetch" href="/assets/js/40.1e139b03.js"><link rel="prefetch" href="/assets/js/41.557aac21.js"><link rel="prefetch" href="/assets/js/42.ab975d9c.js"><link rel="prefetch" href="/assets/js/43.ca4c15f9.js"><link rel="prefetch" href="/assets/js/44.7906aa27.js"><link rel="prefetch" href="/assets/js/45.bed28614.js"><link rel="prefetch" href="/assets/js/46.d575fd34.js"><link rel="prefetch" href="/assets/js/47.db368653.js"><link rel="prefetch" href="/assets/js/48.83d96235.js"><link rel="prefetch" href="/assets/js/49.a89e33fc.js"><link rel="prefetch" href="/assets/js/5.d36054a7.js"><link rel="prefetch" href="/assets/js/50.7542eb55.js"><link rel="prefetch" href="/assets/js/51.253b593b.js"><link rel="prefetch" href="/assets/js/52.3a908a06.js"><link rel="prefetch" href="/assets/js/53.2ff6fc1c.js"><link rel="prefetch" href="/assets/js/54.adbadbb5.js"><link rel="prefetch" href="/assets/js/55.ab210be9.js"><link rel="prefetch" href="/assets/js/56.a1b30466.js"><link rel="prefetch" href="/assets/js/57.cbb25ecd.js"><link rel="prefetch" href="/assets/js/58.cb0aa0f5.js"><link rel="prefetch" href="/assets/js/59.9fe6e772.js"><link rel="prefetch" href="/assets/js/6.1939ee5a.js"><link rel="prefetch" href="/assets/js/60.122efec2.js"><link rel="prefetch" href="/assets/js/61.1530acd2.js"><link rel="prefetch" href="/assets/js/63.dc4f2750.js"><link rel="prefetch" href="/assets/js/64.f3aecea5.js"><link rel="prefetch" href="/assets/js/65.a0f40c3d.js"><link rel="prefetch" href="/assets/js/7.97510c4b.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.760a6aa0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.acc2b136.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/logo.png" alt="Egu0" class="logo"> <span class="site-name can-hide">Egu0</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="👨‍💻 开发" class="dropdown-title"><span class="title">👨‍💻 开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="👨‍💻 开发" class="mobile-dropdown-title"><span class="title">👨‍💻 开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/langs/js-chaoge/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/langs/ts/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-subitem"><a href="/langs/nodejs-chaoge/" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-subitem"><a href="/langs/css-pink/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/langs/rust/" class="nav-link">
+  Rust
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/frameworks/vue2/" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-subitem"><a href="/frameworks/react0/" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          项目
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/projects/react-ts-lege/" class="nav-link">
+  React+TS
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🤖 人工智能" class="dropdown-title"><span class="title">🤖 人工智能</span> <span class="arrow down"></span></button> <button type="button" aria-label="🤖 人工智能" class="mobile-dropdown-title"><span class="title">🤖 人工智能</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ai/ml-intro/" class="nav-link">
+  机器学习
+</a></li><li class="dropdown-item"><!----> <a href="/ai/nlp/bert/" class="nav-link">
+  NLP Bert 
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🐧 Linux" class="dropdown-title"><span class="title">🐧 Linux</span> <span class="arrow down"></span></button> <button type="button" aria-label="🐧 Linux" class="mobile-dropdown-title"><span class="title">🐧 Linux</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/linux/cmake/" class="nav-link">
+  CMake 入门
+</a></li><li class="dropdown-item"><!----> <a href="/linux/linux-gcc/" class="nav-link">
+  GCC 入门
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🔧 工具" class="dropdown-title"><span class="title">🔧 工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="🔧 工具" class="mobile-dropdown-title"><span class="title">🔧 工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/misc/tool-box/a-tool-box/" class="nav-link">
+  我的工具盒
+</a></li><li class="dropdown-item"><!----> <a href="/misc/tool-box/vuepress-using/" class="nav-link">
+  Vuepress v1 实践
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  🔗 关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="👨‍💻 开发" class="dropdown-title"><span class="title">👨‍💻 开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="👨‍💻 开发" class="mobile-dropdown-title"><span class="title">👨‍💻 开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/langs/js-chaoge/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/langs/ts/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-subitem"><a href="/langs/nodejs-chaoge/" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-subitem"><a href="/langs/css-pink/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/langs/rust/" class="nav-link">
+  Rust
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/frameworks/vue2/" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-subitem"><a href="/frameworks/react0/" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          项目
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/projects/react-ts-lege/" class="nav-link">
+  React+TS
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🤖 人工智能" class="dropdown-title"><span class="title">🤖 人工智能</span> <span class="arrow down"></span></button> <button type="button" aria-label="🤖 人工智能" class="mobile-dropdown-title"><span class="title">🤖 人工智能</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ai/ml-intro/" class="nav-link">
+  机器学习
+</a></li><li class="dropdown-item"><!----> <a href="/ai/nlp/bert/" class="nav-link">
+  NLP Bert 
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🐧 Linux" class="dropdown-title"><span class="title">🐧 Linux</span> <span class="arrow down"></span></button> <button type="button" aria-label="🐧 Linux" class="mobile-dropdown-title"><span class="title">🐧 Linux</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/linux/cmake/" class="nav-link">
+  CMake 入门
+</a></li><li class="dropdown-item"><!----> <a href="/linux/linux-gcc/" class="nav-link">
+  GCC 入门
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🔧 工具" class="dropdown-title"><span class="title">🔧 工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="🔧 工具" class="mobile-dropdown-title"><span class="title">🔧 工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/misc/tool-box/a-tool-box/" class="nav-link">
+  我的工具盒
+</a></li><li class="dropdown-item"><!----> <a href="/misc/tool-box/vuepress-using/" class="nav-link">
+  Vuepress v1 实践
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  🔗 关于
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JS 获取随机数</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/misc/note001.html#两种方式" class="sidebar-link">两种方式</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/misc/note001.html#验证随机性" class="sidebar-link">验证随机性</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="js-获取随机数"><a href="#js-获取随机数" class="header-anchor">#</a> JS 获取随机数</h1> <blockquote><p>一个 demo 文章</p></blockquote> <h2 id="两种方式"><a href="#两种方式" class="header-anchor">#</a> 两种方式</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// e.g.1 单例子</span>
+<span class="token comment">// [0, 5]</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment">// e.g.2 通用</span>
+<span class="token comment">// [x, y]，转为 [0, y-x] + x</span>
+<span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">4</span>
+<span class="token keyword">let</span> y <span class="token operator">=</span> <span class="token number">13</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>y <span class="token operator">-</span> x<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> x<span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>y <span class="token operator">-</span> x <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> x<span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'---'</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="验证随机性"><a href="#验证随机性" class="header-anchor">#</a> 验证随机性</h2> <p>验证随机数的概率分布，发现 <code>random_floor</code> 分布比较好，推荐使用</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//封装</span>
+<span class="token keyword">function</span> <span class="token function">random_round</span><span class="token punctuation">(</span><span class="token parameter">x<span class="token punctuation">,</span> y</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>y <span class="token operator">-</span> x<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> x
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">random_floor</span><span class="token punctuation">(</span><span class="token parameter">x<span class="token punctuation">,</span> y</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>y <span class="token operator">-</span> x <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> x
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> count <span class="token operator">=</span> <span class="token number">10000000</span>
+<span class="token punctuation">;</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> staistics <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> count<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> r <span class="token operator">=</span> <span class="token function">random_round</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token comment">// 概率分布有问题！</span>
+    <span class="token comment">// let r = random_floor(x, y)</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>staistics<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      staistics<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>r<span class="token punctuation">,</span> staistics<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      staistics<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>r<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 根据 statistics 的 key 排序</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> x<span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> y<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>i<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> ===&gt; </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span>staistics<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token operator">/</span> count<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">100</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">%</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.5053d170.js" defer></script><script src="/assets/js/2.ab8d584e.js" defer></script><script src="/assets/js/1.4ee088e4.js" defer></script><script src="/assets/js/62.f6520625.js" defer></script>
+  </body>
+</html>
