@@ -1,6 +1,7 @@
 # Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
+## Example: https://github.com/chun-wen/chun-wen.github.io/blob/master/_config.yml
 
 # Site
 title: "Egu0's blog"
@@ -8,8 +9,7 @@ subtitle: 'Believe in yourself. You are braver than you think, more talented tha
 description: ''
 keywords: egu0
 author: Egu0
-#language: zh-tw
-language: en
+language: zh-TW
 timezone: 'Asia/Shanghai'
 
 # URL
