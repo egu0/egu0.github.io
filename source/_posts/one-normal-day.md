@@ -1,8 +1,12 @@
 ---
-title: 普通的一天
+title: one-normal-day
 date: 2026-03-23 12:11:26
-tags: AI
+tags:
 ---
+
+
+
+# 普通的一天
 
 来悉尼 13 天了，回到了 Lidcombe 老住处，租了 Lithium Bike，送起了 Uber Eats，坚持每天跑，还算顺利。
 
